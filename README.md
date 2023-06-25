@@ -19,9 +19,9 @@ Visit
 
 ## Database
 Migrate Database by performing following actions
- -> npx prisma init
-    npx prisma migrate dev --name init
-    npm prisma generate
+        -> npx prisma init
+        npx prisma migrate dev --name init
+        npm prisma generate
  
 
 ## Setting Environment Variables
