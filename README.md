@@ -9,11 +9,11 @@ Visit
       e.g Running locally using port 5001 - http://localhost:5001/api-docs/
 
 ## installation
-install required packages:
-  ->  npm install 
+        install required packages:
+        ->  npm install 
 
-to run server
-    -> npm run start - starts up the api services
+        to run server
+        -> npm run start - starts up the api services
     
 
 
