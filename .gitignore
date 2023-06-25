@@ -1,3 +1,6 @@
+#env variables
+env_config.json
+
 # Logs
 logs
 *.log
