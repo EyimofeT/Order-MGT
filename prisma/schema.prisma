@@ -7,14 +7,32 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url      = "mysql://root:root@localhost:8889/ordermgt"
 }
 
 model Order {
-  id    Int     @id @default(autoincrement())
-  order_id  String  @unique
-  name String
-  description String
-  date_created  DateTime  @default(now())
-  date_last_modified DateTime @updatedAt 
+  id                 Int         @id @default(autoincrement())
+  order_id           String      @unique
+  name               String
+  description        String
+  status             OrderStatus @default(pending)
+  date_created       DateTime    @default(now())
+  date_last_modified DateTime    @updatedAt
+  items              Items[]
+}
+
+model Items {
+  id        Int      @id @default(autoincrement())
+  order_id  String
+  name      String
+  price     Float 
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  order     Order   @relation(fields: [order_id], references: [order_id], onDelete: Cascade)
+}
+
+enum OrderStatus {
+  pending
+  completed
+  cancelled
 }

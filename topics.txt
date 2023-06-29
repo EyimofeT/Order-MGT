@@ -1,0 +1,26 @@
+Caching:
+Caching is a technique used in computing to temporarily store data in order to improve performance. It involves storing frequently accessed data in a cache, which is typically faster to access than the original data source. Caches can be implemented at various levels, such as in-memory caches, disk-based caches, or network-based caches, depending on the specific use case.
+
+Message Queuing:
+Message queuing is a communication pattern used in distributed systems, where messages are sent between different components asynchronously. It provides a way for decoupling the sender and receiver, allowing them to operate at their own pace. Messages are stored in a queue until they are consumed by the receiver, ensuring reliable delivery and enabling scalability and fault-tolerance in complex systems.
+
+Event-driven architecture:
+Event-driven architecture is an architectural pattern where software components communicate and respond to events triggered by external actions or changes in the system. Events can include user interactions, system events, or messages from other components. This pattern enables loose coupling, scalability, and flexibility in building systems that can respond to dynamic conditions and handle a high volume of events.
+
+Distributed systems:
+Distributed systems refer to a collection of interconnected computers or nodes that work together to achieve a common goal. In a distributed system, components can be located in different physical locations and communicate with each other by passing messages. This architecture allows for increased performance, fault tolerance, scalability, and resource sharing across the network.
+
+Database Sharding:
+Database sharding is a technique used to horizontally partition a database across multiple servers or nodes. Instead of storing all the data on a single server, the data is divided into smaller subsets called shards, and each shard is stored on a separate server. Sharding helps distribute the workload and allows for parallel processing, improving performance and scalability in large-scale database systems.
+
+Multi-tenant database architecture:
+Multi-tenant database architecture is an approach where a single database instance serves multiple tenants or customers. Each tenant's data is logically isolated and separated from others, allowing multiple users or organizations to share the same infrastructure while maintaining data privacy and security. This architecture is commonly used in Software-as-a-Service (SaaS) applications.
+
+Containerization and Orchestration:
+Containerization involves packaging an application and its dependencies into a standardized, lightweight container that can run consistently across different environments. Containers provide isolation, portability, and reproducibility, enabling applications to be deployed and scaled easily. Orchestration refers to the management and coordination of multiple containers to work together as a unified system, automating tasks such as deployment, scaling, and monitoring.
+
+Microservices architecture:
+Microservices architecture is an architectural style where an application is composed of small, loosely coupled, and independently deployable services. Each service represents a specific business capability and can be developed, deployed, and scaled independently. Microservices communicate with each other through APIs, enabling flexibility, scalability, and easy maintenance of complex systems.
+
+Serverless Architecture:
+Serverless architecture, also known as Function-as-a-Service (FaaS), is an approach where applications are built and run on cloud platforms without the need for provisioning or managing servers. In a serverless architecture, developers focus on writing and deploying individual functions or small units of code that are triggered by specific events. The cloud provider manages the underlying infrastructure, automatically scaling and allocating resources as needed. This approach offers scalability, cost-efficiency, and reduced operational overhead.
