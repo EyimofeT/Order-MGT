@@ -173,7 +173,7 @@ export const create_order_item=async (req, res)=>{
             data:{
                 order_id: order_id,
                 name: name,
-                price: price
+                price: price 
             }
             
         })
